@@ -138,15 +138,18 @@ let card3 = {
 
 let card4 = {
     suit: 'Clubs',
-    number: 3
+    number: 4
 } // end card4
 
-function isHigher(cardToCheck, cardToCheck){
-    if(cardToCheck.number > cardToCheck.number){
-    console.log(`the ${card3.number} of ${card3.suit}is greater than the ${cardToCheck.number} of ${cardToCheck.suit}.`)
+function isHigher(cardA, cardB){
+    if(cardA.number > cardB.number){
+    console.log(`the ${cardA.number} of ${cardA.suit} is greater than the ${cardB.number} of ${cardB.suit}.\n\n`)
+    }else if(cardB.number > cardA.number){
+    console.log(`the ${cardB.number} of ${cardB.suit} is greater than the ${cardA.number} of ${cardA.suit}.\n\n`)
     }else{
-    console.log(`the ${cardToCheck.number} of ${cardToCheck.suit}is greater than the ${card3.number} of ${card3.suit}.`)
+        console.log('The cards have the same number\n\n');
     }
 }
 
-console.log(isHigher(card3, card4))
+//console.log(isHigher(card3, card4));
+isHigher(card3, card4);
