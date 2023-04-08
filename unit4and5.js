@@ -103,7 +103,7 @@ object[expression]
 */
 
 //  object literals
-
+/*
 let card0 = {
     suit: 'Hearts', // this is a property of card0
     number: 2 // this is also a property of card0
@@ -123,10 +123,10 @@ function isRed(cardToCheck){ // passing an object "card0" as an argument into a 
     } // end !red
 } // end isRed
 
+*/
 
 
-
-
+/*
 
 console.log(isRed(card0));
 console.log(isRed(card1));
@@ -153,3 +153,16 @@ function isHigher(cardA, cardB){
 
 //console.log(isHigher(card3, card4));
 isHigher(card3, card4);
+*/
+
+// .....flowcharts, loops
+/*
+
+*/
+
+let box = [0,1,2,3,4,5,6,7];
+
+for(let i = 0; i < box.length; i ++){
+    console.log(box[i]);
+}
+
