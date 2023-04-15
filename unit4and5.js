@@ -1,5 +1,5 @@
 // functions are callable, repeatable code
-/*
+
 function actualMath(num0, num1){
     console.log(num0, num1);
     let answer = num0 * num1;
@@ -9,6 +9,8 @@ function actualMath(num0, num1){
 function logger() {
     console.log('in logger');
 } // end logger
+logger();
+
 
 function mathExample() {
     console.log('in mathExample');
@@ -21,9 +23,9 @@ function returner() {
     return true;
 } // end returner
 
-logger();
+
 returner();
-console.log(returner()); // this will print "true"
+console.log('running returner: ', returner()); // this will print "true"
 
 console.log('3 * 9 =', mathExample());
 console.log(actualMath(2, 5));
@@ -82,7 +84,7 @@ getInCar('hitchhiker');
 console.log('do we have enough seats?', enoughSeats());
 console.log('are we ready for the trip?', readyForRoadTrip());
 
-*/
+
 
 //imposter syndrome. learning from mistakes is important. seek others' input.
 
@@ -103,7 +105,7 @@ object[expression]
 */
 
 //  object literals
-/*
+
 let card0 = {
     suit: 'Hearts', // this is a property of card0
     number: 2 // this is also a property of card0
@@ -113,6 +115,7 @@ let card1={
     suit: 'Spades',
     number: 1
 }
+console.log(`---check if the card is hearts, OR diamonds---`)
 function isRed(cardToCheck){ // passing an object "card0" as an argument into a function
     console.log('in isRed', cardToCheck);
     if(cardToCheck.suit === 'Hearts' || cardToCheck.suit === 'Diamonds'){
@@ -123,14 +126,9 @@ function isRed(cardToCheck){ // passing an object "card0" as an argument into a 
     } // end !red
 } // end isRed
 
-*/
-
-
-/*
-
 console.log(isRed(card0));
 console.log(isRed(card1));
-
+/*
 let card3 = {
     suit: 'Diamonds',
     number: 4
@@ -166,3 +164,48 @@ for(let i = 0; i < box.length; i ++){
     console.log(box[i]);
 }
 
+function getLastItem(arr) {
+	let lastItem = arr[arr.length -1];
+	return console.log(lastItem);
+}
+
+getLastItem([1, 2, 3]);
+
+function getFirstValue(arr) {
+    return arr[0];
+}
+
+console.log(getFirstValue([1, 2, 3]));
+
+//Create a function that takes the age in years and returns the age in days.
+
+function calcAge(age) {
+	return age * 365;
+}
+
+console.log(calcAge(2));
+
+//Write a function that takes an integer minutes and converts it to seconds.
+function minutes(mins) {
+ return mins * 60;
+}
+console.log(minutes(5));
+
+//Write a function that takes the base and height of a triangle and return its area.
+function triArea(base, height) {
+	return (base * height) / 2;
+}
+console.log(triArea(10, 5));
+
+//find smallest number in an array
+function findSmallestNum(arr) {
+	let sorted = arr.sort();
+    return sorted[0];
+}
+console.log(findSmallestNum([88, 2]));
+
+function findSmallestNum(arr) {
+    return Math.min(...arr);
+  }
+
+  console.log(findSmallestNum([88, 2]));
